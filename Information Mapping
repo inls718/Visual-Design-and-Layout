@@ -1,0 +1,45 @@
+How is the information mapped now?
+- Components in the workspace: flow graph, top bars (including icons), block list, and debug console. 
+- Color coding for the blocks is the same for all types of blocks (variable, import, source, filter, and etc.)
+- The size of different types of the block is unchanged though the position and direction of each block can be changed.
+- The variable blocks and import blocks work as supplemental blocks, but it is hard to differentiate them from functional blocks like 
+  source, sink, and etc. since they have a similar visual design, color coding rules, and flexibility to be put at any place within the 
+  workspace.
+- When clicking on the block to see detailed settings information of the block, values are color coded and some labels are underscored 
+  which indicate they may have special meanings but do not make any sense unless digging deeper into documentation. 
+- Within the settings section of the blocks, there are three tags “General”, “Advance”, and “Documentation”. “General” tag has more 
+  variables than “Advanced”.
+- The connection between blocks also uses color coding, currently, it represents what type of data is input and output from the block. 
+  But does it really matter to users? Or the knowing if the connection is a good one or not means more to the users?
+- How to connect two blocks? Clicking or dragging? Which one is more user-friendly and convenient for users?
+- Many different icons are placed at the top of the workspace. The order does not make any sense. The differentiation between icons with 
+  various functions is very vague. The search icon button needs to be clicked in order to initiate a search of the blocks. Why don’t make 
+  it a permanent search bar at the top of the block list? 
+- Dragging blocks from the list to the workspace make a lot more sense and is something should be kept.
+- If there is error existed in the flowchart, the “Run” icon will be greyed, it is hard for the users to figure out where to find the 
+  error messages, even when clicking to see the error, the language that is used is hard to understand. In most cases, the error is the 
+  SDR is NOT connected but the software will not give any alert.
+
+What is the more effective or better way for dong that?
+- Keep the current layout for the workspace as flow graph, top bars (including icons), block list, and debug console.
+- Color coding needs to make more sense. For blocks, there should be more difference between functional blocks and supplementary blocks.
+- The position of all types of blocks is flexible right now. Will require and limit different blocks in certain area make it clearer for
+  the user interface? Such as all the variable blocks are on the left side of the workspace while functional blocks are in the center of 
+  the flow graph.
+- When clicking on the block to see detailed settings for the block, only providing basic variables in "General" for beginner users to 
+  determine and provide more options in "Advance" tag for power users to manipulate makes more sense. The color coding of different 
+  variables needs further description or explanation. One potential way is to provide hidden guidance, when the mouth move to the name of
+  the variable, it will show a small pop-up window to give guidance.
+- The meaning of color in the connection should be clarified or changed if necessary. What does a user expect to learn from the color of 
+  the connection? What is helpful to them when designing and debugging the graph. The way to connect two blocks needs further guidance too. 
+- The icons in the top bar should be divided into different sections in order to differentiate between general icons (copy, paste, delete) 
+  and core icons (plug, unplug, error, run). We could also think about make the core icons pop up by changing the size, color, or position.
+- The error message should be more visible and easy to understand. Wish the platform can inform the users if the problem is involved with
+  hardware settings instead of software settings.
+- When turning off a functional block, how to differentiate them with running blocks. Using color? Different border?
+- We could provide the keyboard shortcut for power users.
+- Other existed products we could reference:
+  - Game reference: tower defense
+  - Other programming software
+  - Audacity
+  - Paid software
